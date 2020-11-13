@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <h1>Texto de teste 001</h1>
+
+        <p>Texto de teste 002</p>
+
+        <p name='id01'>Texto de teste 003</p>
+
+        <script>
+            //códigos javascript aqui
+            //estudando DOM
+
+            //aprenda a montar a árvore na mente
+            //https://www.youtube.com/watch?v=WWZX8RWLxIk&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=13
+
+            var corpo=window.document.body;
+            corpo.style.background='black';
+
+            corpo.style.color='white';
+
+            var texto=window.document.getElementsByTagName('p')[0];
+
+            var texto2=window.document.getElementsByName('id01');
+
+            document.writeln('O texto é: ' + texto.innerText);
+
+            //se não for dado um valor nessa forma de pegar valor, será mostrado na tela com undefined
+            texto2.innerText='Olá!';
+
+            document.writeln('O outro texto é: ' + texto2.innerText);
+
+        </script>
+
+    </body>
+</html>
